@@ -1,0 +1,239 @@
+// Reset CSS
+@mixin reset {
+
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+
+    /* HTML5 display-role reset for older browsers */
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+        display: block;
+    }
+
+    body {
+        line-height: 1;
+    }
+
+    ol,
+    ul {
+        list-style: none;
+    }
+
+    blockquote,
+    q {
+        quotes: none;
+
+        &:before,
+        &:after {
+            content: '';
+            content: none;
+        }
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+}
+
+// Container
+$container-width: 1315px;
+
+// Colors
+$colors: (
+    'gray': #535353,
+    'black': #020202,
+    'brown': #665f5a,
+    'teal': #00b2a9,
+    'red': #ea4120,
+    'bronze': #a56839,
+    'olive': #727464,
+    'sage': #858770
+);
+
+// Margins
+$margins: (
+    'mb-30': 30px,
+    'mb-40': 30px,
+    'mb-50': 50px,
+    'mb-60': 60px,
+    'mb-75': 75px,
+    'mb-80' : 80px,
+);
+
+// Container Mixin
+@mixin container {
+    max-width: $container-width;
+    margin: 0 auto;
+    width: 100%;
+}
+
+// Margin Mixins
+@each $name, $value in $margins {
+    .#{$name} {
+        margin-bottom: $value;
+    }
+}
+
+// Apply Reset
+@include reset;
+
+
+// Base Container
+.container {
+    @include container;
+}
+
+// main
+
+.main_container {
+    background: url('/images/main_bg.jpg') no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+        padding: 90px 0;
+        box-sizing: border-box;
+        .logo_title{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            img{
+                width: 218px;
+                height: auto;
+            }
+
+            p{
+                color: #fff;
+                font-size: 20px;
+                background: url('/images/main_banner.png') no-repeat;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 188px;
+                height: 33px;
+                letter-spacing: -0.06em;
+            }
+
+        }
+
+        .sub_title{
+            font-size: 30px;
+            letter-spacing: -0.03em;
+            color: map-get($colors, 'brown');
+        }
+
+        h2{
+            font-size: 90px;
+            letter-spacing: -0.03em;
+            color: map-get($colors, 'black');
+        }
+
+        .sub_span_text{
+            color: map-get($colors, 'brown');
+        }
+
+    }
+}

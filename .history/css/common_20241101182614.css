@@ -1,0 +1,7 @@
+.main_container {
+  background: url("/images/main_bg.jpg") no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}/*# sourceMappingURL=common_20241101182614.css.map */

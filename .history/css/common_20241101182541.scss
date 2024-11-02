@@ -1,0 +1,43 @@
+
+// Container
+$container-width: 1315px;
+
+// Colors
+$colors: (
+  'gray': #535353,
+  'black': #020202,
+  'brown': #665f5a,
+  'teal': #00b2a9,
+  'red': #ea4120,
+  'bronze': #a56839,
+  'olive': #727464,
+  'sage': #858770
+);
+
+// Margins
+$margins: (
+  'mb-50': 50px,
+  'mb-75': 75px
+);
+
+// Container Mixin
+@mixin container {
+  max-width: $container-width;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+
+
+// main
+
+.main_container{
+    background: url('/images/main_bg.jpg') no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    .container{
+
+    }
+}
