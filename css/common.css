@@ -7,45 +7,79 @@
 }
 @font-face {
   font-family: "NanumSquare";
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url("../fonts/NANUMSQUAREB.TTF") format("truetype"), url("../fonts/NANUMSQUAREL.TTF") format("truetype");
-}
-@font-face {
-  font-family: "NanumSquare";
   font-weight: 300;
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/NANUMSQUAREL.TTF") format("truetype");
-}
-@font-face {
-  font-family: "NanumSquare";
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-  src: url("../fonts/NANUMSQUAREM.TTF") format("truetype");
-}
-@font-face {
-  font-family: "NanumSquare";
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-  src: url("../fonts/NANUMSQUARESB.TTF") format("truetype");
+  src: url("../fonts/NanumSquare_acR.ttf") format("truetype");
 }
 @font-face {
   font-family: "NanumSquare";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/NANUMSQUARB.TTF") format("truetype");
+  src: url("../fonts/NanumSquareB.ttf") format("truetype");
 }
 @font-face {
   font-family: "NanumSquare";
   font-weight: 800;
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/NANUMSQUAREB.TTF") format("truetype");
+  src: url("../fonts/NanumSquareEB.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NanumSquare";
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/NanumSquareL.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NanumSquare Neo";
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/NanumSquareNeo-aLt.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NanumSquare Neo";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/NanumSquareNeo-bRg.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NanumSquare Neo";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/NanumSquareNeo-cBd.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NanumSquare Neo";
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/NanumSquareNeo-dEb.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NanumSquare Neo";
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/NanumSquareNeo-eHv.ttf") format("truetype");
+}
+@font-face {
+  font-family: "HancomMalangMalang";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/HancomMalangMalang-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Malang";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/HancomMalangMalang-Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "OKGUNG";
@@ -53,6 +87,27 @@
   font-style: normal;
   font-display: swap;
   src: url("../fonts/OKGUNG.woff2") format("woff2"), url("../fonts/OKGUNG.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Gmarket";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/GmarketSansTTFLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Gmarket";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/GmarketSansTTFMedium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Gmarket";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/GmarketSansTTFBold.ttf") format("truetype");
 }
 .pt-30 {
   padding-top: 30px;
@@ -761,6 +816,11 @@ table {
   width: 100%;
 }
 
+html, body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 .main_container {
   background: url("/images/main_bg.jpg") no-repeat;
   width: 100vw;
@@ -773,7 +833,7 @@ table {
   flex-direction: column;
   justify-content: flex-end;
   height: 100%;
-  padding: 90px 0;
+  padding: 80px 0;
   box-sizing: border-box;
 }
 .main_container .container .logo_title {
@@ -787,22 +847,22 @@ table {
 }
 .main_container .container .logo_title p {
   color: #fff;
-  font-size: 20px;
-  background: url("/images/main_banner.png") no-repeat;
+  font-size: 16px;
+  background: url(/images/main_banner.png) no-repeat;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 188px;
+  width: 184px;
   height: 33px;
   letter-spacing: -0.06em;
 }
 .main_container .container .sub_title {
   letter-spacing: -0.03em;
   color: #665f5a;
-  font-family: "NanumSquare", sans-serif;
+  font-family: "NanumSquare Neo", sans-serif;
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 900;
 }
 .main_container .container h2 {
   line-height: 100px;
@@ -859,6 +919,7 @@ table {
 .story_section {
   background: url("/images/story_bg.jpg") no-repeat;
   width: 100vw;
+  background-size: cover;
 }
 .story_section .container .video_container {
   width: 100%;
@@ -900,8 +961,9 @@ table {
   justify-content: space-between;
 }
 .story_section .container .story_02 .story_02_01 .story_image {
-  width: 650px;
+  width: 600px;
   height: auto;
+  box-shadow: 0px 5px 23px 6px rgba(0, 0, 0, 0.34);
 }
 .story_section .container .story_02 .story_02_01 .story_image img {
   width: 100%;
@@ -948,8 +1010,11 @@ table {
   justify-content: space-between;
 }
 .story_section .container .story_03 .story_03_01 .story_image {
-  width: 700px;
+  width: 600px;
   height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  box-shadow: 0px 5px 23px 6px rgba(0, 0, 0, 0.34);
 }
 .story_section .container .story_03 .story_03_01 .story_image img {
   width: 100%;
@@ -987,8 +1052,9 @@ table {
   justify-content: space-between;
 }
 .story_section .container .story_04 .story04_01 .story_image {
-  width: 850px;
+  width: 750px;
   height: auto;
+  box-shadow: 0px 5px 23px 6px rgba(0, 0, 0, 0.34);
 }
 .story_section .container .story_04 .story04_01 .story_image img {
   width: 100%;
@@ -1017,8 +1083,9 @@ table {
   justify-content: space-between;
 }
 .story_section .container .story_04 .story04_02 .story_image {
-  width: 650px;
+  width: 600px;
   height: auto;
+  box-shadow: 0px 5px 23px 6px rgba(0, 0, 0, 0.34);
 }
 .story_section .container .story_04 .story04_02 .story_image img {
   width: 100%;
@@ -1130,12 +1197,6 @@ table {
   width: 48%;
   height: auto;
 }
-.story_section .container .story_05 .middle_cotain .middle_image .float_image {
-  position: absolute;
-  right: -14%;
-  bottom: 0;
-  width: 150px;
-}
 .story_section .container .story_05 .middle_cotain .record_btn {
   background-color: #00b2a9;
   border-radius: 30px;
@@ -1166,4 +1227,131 @@ table {
   background: url("/images/info_bg.jpg") no-repeat;
   width: 100vw;
   height: 100%;
+  background-size: cover;
+}
+.sponsor_section .container .sponsor-container h2 {
+  font-family: "Malang", serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: -0.05rem;
+  text-align: center;
+}
+.sponsor_section .container .sponsor-container .sponsor_list {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  padding: 90px 45px;
+  gap: 10px;
+  box-sizing: border-box;
+}
+.sponsor_section .container .sponsor-container .sponsor_list .sponsor_list_inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.sponsor_section .container .sponsor-container .sponsor_list .sponsor_list_inner .list-inner-img {
+  width: 220px;
+  height: 220px;
+}
+.sponsor_section .container .sponsor-container .sponsor_list .sponsor_list_inner .list-inner-img img {
+  width: 100%;
+}
+.sponsor_section .container .sponsor-container .sponsor_list .sponsor_list_inner p {
+  font-family: "NanumSquare Neo", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: -0.06em;
+}
+.sponsor_section .container .sponsor-container .sponsor_list .arrow-img {
+  padding-top: 120px;
+  display: inline-block;
+}
+.sponsor_section .container .sponsor-container .info-span {
+  font-family: "NanumSquare Neo", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: -0.03rem;
+  text-align: center;
+}
+.sponsor_section .container .sponsor-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sponsor_section .container .sponsor-inner h2 {
+  font-family: "Malang", serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: -0.05rem;
+  text-align: center;
+}
+.sponsor_section .container .sponsor-inner p {
+  font-family: "NanumSquare Neo", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 50px;
+  letter-spacing: -0.03em;
+  text-align: center;
+}
+.sponsor_section .container .sponsor-inner img {
+  width: 80%;
+  height: auto;
+}
+.sponsor_section .container .faq_section h2 {
+  font-family: "Gmarket", serif;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  text-align: center;
+}
+.sponsor_section .container .faq_section .faq_list li {
+  background-color: #fff;
+  padding: 20px 24px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.sponsor_section .container .faq_section .faq_list li .faq_question {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #000;
+  gap: 10px;
+}
+.sponsor_section .container .faq_section .faq_list li .faq_question img {
+  width: 65px;
+  height: auto;
+}
+.sponsor_section .container .faq_section .faq_list li .faq_question p {
+  font-family: "NanumSquare Neo", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+}
+.sponsor_section .container .faq_section .faq_list li .faq_answer {
+  padding: 35px 0 20px;
+  font-family: "NanumSquare Neo", sans-serif;
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 50px;
+  letter-spacing: -0.03em;
+  text-align: center;
+}
+
+.float-section {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  position: fixed;
+  right: 88px;
+  bottom: 50px;
+}
+.float-section .float {
+  width: 150px;
 }/*# sourceMappingURL=common.css.map */
