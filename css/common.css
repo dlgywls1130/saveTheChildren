@@ -822,7 +822,7 @@ html, body {
 }
 
 .main_container {
-  background: url("/images/main_bg.jpg") no-repeat;
+  background: url("../images/main_bg.jpg") no-repeat;
   width: 100vw;
   height: 100vh;
   background-size: cover;
@@ -848,7 +848,7 @@ html, body {
 .main_container .container .logo_title p {
   color: #fff;
   font-size: 16px;
-  background: url(/images/main_banner.png) no-repeat;
+  background: url("../images/main_banner.png") no-repeat;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -917,7 +917,7 @@ html, body {
 }
 
 .story_section {
-  background: url("/images/story_bg.jpg") no-repeat;
+  background: url("../images/story_bg.jpg") no-repeat;
   width: 100vw;
   background-size: cover;
 }
@@ -1224,7 +1224,7 @@ html, body {
 }
 
 .sponsor_section {
-  background: url("/images/info_bg.jpg") no-repeat;
+  background: url("../images/info_bg.jpg") no-repeat;
   width: 100vw;
   height: 100%;
   background-size: cover;
